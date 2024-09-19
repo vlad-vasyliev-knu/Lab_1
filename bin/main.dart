@@ -10,18 +10,17 @@ void main(List<String> arguments) {
     exit(1);
   }
 
-  List<int> tmp = [1, 1];
+  List<int> tmp = [1, 0];
   int sum = 0;
-
-  for (int i = 0; i < inNumber; i++) {
+  print('1');
+  for (int i = 1; i < inNumber; i++) {
     sum = tmp[0] + tmp[1];
-    if (i%2 == 1) {
+    if (i%2 == 0) {
       tmp[0] = sum;
     } else {
       tmp[1] = sum;
     }
-    print(tmp);
+  print(sum);
   }
 
-  print(sum);
 }
